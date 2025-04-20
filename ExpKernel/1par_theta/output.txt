@@ -1,0 +1,41 @@
+Starting Julia ...
+Loading required package: spatstat.data
+Loading required package: spatstat.univar
+spatstat.univar 3.1-2
+Loading required package: spatstat.geom
+spatstat.geom 3.3-6
+Loading required package: spatstat.random
+spatstat.random 3.3-3
+Loading required package: spatstat.explore
+Loading required package: nlme
+spatstat.explore 3.4-2
+Loading required package: spatstat.model
+Loading required package: rpart
+spatstat.model 3.3-5
+Loading required package: spatstat.linnet
+spatstat.linnet 3.2-5
+
+spatstat 3.3-2 
+For an introduction to spatstat, type ‘beginner’ 
+
+┌ Info: Running on CPU
+└ @ NeuralEstimators /Users/alan/.julia/packages/NeuralEstimators/HJPOB/src/utility.jl:295
+Computing the initial validation risk... Initial validation risk = 0.4142235
+Computing the initial training risk... Initial training risk = 0.4021451
+Epoch: 1  Training risk: 0.15  Validation risk: 0.039  Learning rate: 1.00E-03  Epoch time: 20.983 seconds
+Epoch: 2  Training risk: 0.055  Validation risk: 0.035  Learning rate: 1.00E-03  Epoch time: 2.93 seconds
+Epoch: 3  Training risk: 0.037  Validation risk: 0.036  Learning rate: 9.94E-04  Epoch time: 2.675 seconds
+Epoch: 4  Training risk: 0.032  Validation risk: 0.03  Learning rate: 9.76E-04  Epoch time: 2.811 seconds
+Epoch: 5  Training risk: 0.031  Validation risk: 0.033  Learning rate: 9.46E-04  Epoch time: 2.69 seconds
+Epoch: 6  Training risk: 0.03  Validation risk: 0.03  Learning rate: 9.05E-04  Epoch time: 2.747 seconds
+Epoch: 7  Training risk: 0.029  Validation risk: 0.031  Learning rate: 8.54E-04  Epoch time: 2.846 seconds
+Epoch: 8  Training risk: 0.029  Validation risk: 0.03  Learning rate: 7.94E-04  Epoch time: 2.709 seconds
+Epoch: 9  Training risk: 0.029  Validation risk: 0.031  Learning rate: 7.27E-04  Epoch time: 2.755 seconds
+Epoch: 10  Training risk: 0.028  Validation risk: 0.032  Learning rate: 6.55E-04  Epoch time: 2.673 seconds
+Epoch: 11  Training risk: 0.028  Validation risk: 0.032  Learning rate: 5.78E-04  Epoch time: 2.673 seconds
+Epoch: 12  Training risk: 0.027  Validation risk: 0.032  Learning rate: 5.00E-04  Epoch time: 2.694 seconds
+Stopping early since the validation loss has not improved in 3 epochs
+	Running GNN NBE...
+null device 
+          1 
+Time difference of 1.22948 mins
