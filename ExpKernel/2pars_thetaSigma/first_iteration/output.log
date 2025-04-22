@@ -1,0 +1,807 @@
+Starting Julia ...
+Loading required package: spatstat.data
+Loading required package: spatstat.univar
+spatstat.univar 3.1-2
+Loading required package: spatstat.geom
+spatstat.geom 3.3-6
+
+Attaching package: ‘spatstat.geom’
+
+The following object is masked from ‘package:patchwork’:
+
+    area
+
+Loading required package: spatstat.random
+spatstat.random 3.3-3
+Loading required package: spatstat.explore
+Loading required package: nlme
+spatstat.explore 3.4-2
+Loading required package: spatstat.model
+Loading required package: rpart
+spatstat.model 3.3-5
+Loading required package: spatstat.linnet
+spatstat.linnet 3.2-5
+
+spatstat 3.3-2 
+For an introduction to spatstat, type ‘beginner’ 
+
+Loading required package: StanHeaders
+
+rstan version 2.32.6 (Stan version 2.32.2)
+
+For execution on a local, multicore CPU with excess RAM we recommend calling
+options(mc.cores = parallel::detectCores()).
+To avoid recompilation of unchanged Stan programs, we recommend calling
+rstan_options(auto_write = TRUE)
+For within-chain threading using `reduce_sum()` or `map_rect()` Stan functions,
+change `threads_per_chain` option:
+rstan_options(threads_per_chain = 1)
+
+┌ Info: Running on CPU
+└ @ NeuralEstimators /Users/alan/.julia/packages/NeuralEstimators/HJPOB/src/utility.jl:295
+Computing the initial validation risk... Initial validation risk = 0.47733715
+Computing the initial training risk... Initial training risk = 0.47428554
+Epoch: 1  Training risk: 0.117  Validation risk: 0.054  Learning rate: 1.00E-03  Epoch time: 48.724 seconds
+Epoch: 2  Training risk: 0.051  Validation risk: 0.047  Learning rate: 1.00E-03  Epoch time: 32.188 seconds
+Epoch: 3  Training risk: 0.047  Validation risk: 0.046  Learning rate: 9.99E-04  Epoch time: 31.866 seconds
+Epoch: 4  Training risk: 0.045  Validation risk: 0.043  Learning rate: 9.96E-04  Epoch time: 31.384 seconds
+Epoch: 5  Training risk: 0.044  Validation risk: 0.045  Learning rate: 9.91E-04  Epoch time: 31.205 seconds
+Epoch: 6  Training risk: 0.043  Validation risk: 0.043  Learning rate: 9.84E-04  Epoch time: 31.704 seconds
+Epoch: 7  Training risk: 0.043  Validation risk: 0.042  Learning rate: 9.76E-04  Epoch time: 31.459 seconds
+Epoch: 8  Training risk: 0.042  Validation risk: 0.041  Learning rate: 9.65E-04  Epoch time: 31.034 seconds
+Epoch: 9  Training risk: 0.042  Validation risk: 0.042  Learning rate: 9.52E-04  Epoch time: 31.592 seconds
+Epoch: 10  Training risk: 0.042  Validation risk: 0.041  Learning rate: 9.38E-04  Epoch time: 31.087 seconds
+Epoch: 11  Training risk: 0.041  Validation risk: 0.041  Learning rate: 9.22E-04  Epoch time: 31.339 seconds
+Epoch: 12  Training risk: 0.041  Validation risk: 0.042  Learning rate: 9.05E-04  Epoch time: 31.757 seconds
+Epoch: 13  Training risk: 0.041  Validation risk: 0.041  Learning rate: 8.85E-04  Epoch time: 33.105 seconds
+Epoch: 14  Training risk: 0.04  Validation risk: 0.041  Learning rate: 8.64E-04  Epoch time: 31.921 seconds
+Stopping early since the validation loss has not improved in 3 epochs
+	Running GNN NBE...
+null device 
+          1 
+null device 
+          1 
+null device 
+          1 
+
+SAMPLING FOR MODEL 'anon_model' NOW (CHAIN 1).
+
+SAMPLING FOR MODEL 'anon_model' NOW (CHAIN 2).
+Chain 1: 
+Chain 1: Gradient evaluation took 0.004763 seconds
+Chain 1: 1000 transitions using 10 leapfrog steps per transition would take 47.63 seconds.
+Chain 1: Adjust your expectations accordingly!
+Chain 1: 
+Chain 1: 
+Chain 2: 
+Chain 2: Gradient evaluation took 0.004837 seconds
+Chain 2: 1000 transitions using 10 leapfrog steps per transition would take 48.37 seconds.
+Chain 2: Adjust your expectations accordingly!
+Chain 2: 
+Chain 2: 
+Chain 1: Iteration:   1 / 1000 [  0%]  (Warmup)
+Chain 2: Iteration:   1 / 1000 [  0%]  (Warmup)
+Chain 1: Iteration: 100 / 1000 [ 10%]  (Warmup)
+Chain 2: Iteration: 100 / 1000 [ 10%]  (Warmup)
+Chain 1: Iteration: 200 / 1000 [ 20%]  (Warmup)
+Chain 2: Iteration: 200 / 1000 [ 20%]  (Warmup)
+Chain 1: Iteration: 251 / 1000 [ 25%]  (Sampling)
+Chain 2: Iteration: 251 / 1000 [ 25%]  (Sampling)
+Chain 1: Iteration: 350 / 1000 [ 35%]  (Sampling)
+Chain 2: Iteration: 350 / 1000 [ 35%]  (Sampling)
+Chain 1: Iteration: 450 / 1000 [ 45%]  (Sampling)
+Chain 2: Iteration: 450 / 1000 [ 45%]  (Sampling)
+Chain 1: Iteration: 550 / 1000 [ 55%]  (Sampling)
+Chain 2: Iteration: 550 / 1000 [ 55%]  (Sampling)
+Chain 1: Iteration: 650 / 1000 [ 65%]  (Sampling)
+Chain 2: Iteration: 650 / 1000 [ 65%]  (Sampling)
+Chain 1: Iteration: 750 / 1000 [ 75%]  (Sampling)
+Chain 2: Iteration: 750 / 1000 [ 75%]  (Sampling)
+Chain 1: Iteration: 850 / 1000 [ 85%]  (Sampling)
+Chain 2: Iteration: 850 / 1000 [ 85%]  (Sampling)
+Chain 1: Iteration: 950 / 1000 [ 95%]  (Sampling)
+Chain 2: Iteration: 950 / 1000 [ 95%]  (Sampling)
+Chain 1: Iteration: 1000 / 1000 [100%]  (Sampling)
+Chain 1: 
+Chain 1:  Elapsed Time: 144.251 seconds (Warm-up)
+Chain 1:                599.545 seconds (Sampling)
+Chain 1:                743.796 seconds (Total)
+Chain 1: 
+Chain 2: Iteration: 1000 / 1000 [100%]  (Sampling)
+Chain 2: 
+Chain 2:  Elapsed Time: 170.941 seconds (Warm-up)
+Chain 2:                598.87 seconds (Sampling)
+Chain 2:                769.811 seconds (Total)
+Chain 2: 
+
+SAMPLING FOR MODEL 'anon_model' NOW (CHAIN 1).
+
+SAMPLING FOR MODEL 'anon_model' NOW (CHAIN 2).
+Chain 1: 
+Chain 1: Gradient evaluation took 0.000916 seconds
+Chain 1: 1000 transitions using 10 leapfrog steps per transition would take 9.16 seconds.
+Chain 1: Adjust your expectations accordingly!
+Chain 1: 
+Chain 1: 
+Chain 2: 
+Chain 2: Gradient evaluation took 0.000888 seconds
+Chain 2: 1000 transitions using 10 leapfrog steps per transition would take 8.88 seconds.
+Chain 2: Adjust your expectations accordingly!
+Chain 2: 
+Chain 2: 
+Chain 1: Iteration:   1 / 1000 [  0%]  (Warmup)
+Chain 2: Iteration:   1 / 1000 [  0%]  (Warmup)
+Chain 1: Iteration: 100 / 1000 [ 10%]  (Warmup)
+Chain 2: Iteration: 100 / 1000 [ 10%]  (Warmup)
+Chain 1: Iteration: 200 / 1000 [ 20%]  (Warmup)
+Chain 2: Iteration: 200 / 1000 [ 20%]  (Warmup)
+Chain 1: Iteration: 251 / 1000 [ 25%]  (Sampling)
+Chain 2: Iteration: 251 / 1000 [ 25%]  (Sampling)
+Chain 1: Iteration: 350 / 1000 [ 35%]  (Sampling)
+Chain 2: Iteration: 350 / 1000 [ 35%]  (Sampling)
+Chain 1: Iteration: 450 / 1000 [ 45%]  (Sampling)
+Chain 2: Iteration: 450 / 1000 [ 45%]  (Sampling)
+Chain 1: Iteration: 550 / 1000 [ 55%]  (Sampling)
+Chain 2: Iteration: 550 / 1000 [ 55%]  (Sampling)
+Chain 1: Iteration: 650 / 1000 [ 65%]  (Sampling)
+Chain 2: Iteration: 650 / 1000 [ 65%]  (Sampling)
+Chain 1: Iteration: 750 / 1000 [ 75%]  (Sampling)
+Chain 2: Iteration: 750 / 1000 [ 75%]  (Sampling)
+Chain 1: Iteration: 850 / 1000 [ 85%]  (Sampling)
+Chain 2: Iteration: 850 / 1000 [ 85%]  (Sampling)
+Chain 1: Iteration: 950 / 1000 [ 95%]  (Sampling)
+Chain 2: Iteration: 950 / 1000 [ 95%]  (Sampling)
+Chain 1: Iteration: 1000 / 1000 [100%]  (Sampling)
+Chain 1: 
+Chain 1:  Elapsed Time: 28.432 seconds (Warm-up)
+Chain 1:                121.646 seconds (Sampling)
+Chain 1:                150.078 seconds (Total)
+Chain 1: 
+Chain 2: Iteration: 1000 / 1000 [100%]  (Sampling)
+Chain 2: 
+Chain 2:  Elapsed Time: 29.247 seconds (Warm-up)
+Chain 2:                121.776 seconds (Sampling)
+Chain 2:                151.023 seconds (Total)
+Chain 2: 
+
+SAMPLING FOR MODEL 'anon_model' NOW (CHAIN 1).
+
+SAMPLING FOR MODEL 'anon_model' NOW (CHAIN 2).
+Chain 2: 
+Chain 2: Gradient evaluation took 0.001517 seconds
+Chain 1Chain 2: : 
+1000 transitions using 10 leapfrog steps per transition would take 15.17 seconds.
+Chain 2: Adjust your expectations accordingly!
+Chain 2: 
+Chain 2: 
+Chain 1: Gradient evaluation took 0.001547 seconds
+Chain 1: 1000 transitions using 10 leapfrog steps per transition would take 15.47 seconds.
+Chain 1: Adjust your expectations accordingly!
+Chain 1: 
+Chain 1: 
+Chain 1: Iteration:   1 / 1000 [  0%]  (Warmup)
+Chain 2: Iteration:   1 / 1000 [  0%]  (Warmup)
+Chain 2: Iteration: 100 / 1000 [ 10%]  (Warmup)
+Chain 1: Iteration: 100 / 1000 [ 10%]  (Warmup)
+Chain 2: Iteration: 200 / 1000 [ 20%]  (Warmup)
+Chain 1: Iteration: 200 / 1000 [ 20%]  (Warmup)
+Chain 2: Iteration: 251 / 1000 [ 25%]  (Sampling)
+Chain 1: Iteration: 251 / 1000 [ 25%]  (Sampling)
+Chain 2: Iteration: 350 / 1000 [ 35%]  (Sampling)
+Chain 1: Iteration: 350 / 1000 [ 35%]  (Sampling)
+Chain 2: Iteration: 450 / 1000 [ 45%]  (Sampling)
+Chain 1: Iteration: 450 / 1000 [ 45%]  (Sampling)
+Chain 2: Iteration: 550 / 1000 [ 55%]  (Sampling)
+Chain 1: Iteration: 550 / 1000 [ 55%]  (Sampling)
+Chain 2: Iteration: 650 / 1000 [ 65%]  (Sampling)
+Chain 1: Iteration: 650 / 1000 [ 65%]  (Sampling)
+Chain 2: Iteration: 750 / 1000 [ 75%]  (Sampling)
+Chain 1: Iteration: 750 / 1000 [ 75%]  (Sampling)
+Chain 2: Iteration: 850 / 1000 [ 85%]  (Sampling)
+Chain 1: Iteration: 850 / 1000 [ 85%]  (Sampling)
+Chain 2: Iteration: 950 / 1000 [ 95%]  (Sampling)
+Chain 1: Iteration: 950 / 1000 [ 95%]  (Sampling)
+Chain 2: Iteration: 1000 / 1000 [100%]  (Sampling)
+Chain 2: 
+Chain 2:  Elapsed Time: 48.926 seconds (Warm-up)
+Chain 2:                214.387 seconds (Sampling)
+Chain 2:                263.313 seconds (Total)
+Chain 2: 
+Chain 1: Iteration: 1000 / 1000 [100%]  (Sampling)
+Chain 1: 
+Chain 1:  Elapsed Time: 55.661 seconds (Warm-up)
+Chain 1:                213.912 seconds (Sampling)
+Chain 1:                269.573 seconds (Total)
+Chain 1: 
+
+SAMPLING FOR MODEL 'anon_model' NOW (CHAIN 1).
+
+SAMPLING FOR MODEL 'anon_model' NOW (CHAIN 2).
+Chain 1: 
+Chain 1: Gradient evaluation took 0.004044 seconds
+Chain 1: 1000 transitions using 10 leapfrog steps per transition would take 40.44 seconds.
+Chain 1: Adjust your expectations accordingly!
+Chain 1: 
+Chain 1: 
+Chain 2: 
+Chain 2: Gradient evaluation took 0.004037 seconds
+Chain 2: 1000 transitions using 10 leapfrog steps per transition would take 40.37 seconds.
+Chain 2: Adjust your expectations accordingly!
+Chain 2: 
+Chain 2: 
+Chain 1: Iteration:   1 / 1000 [  0%]  (Warmup)
+Chain 2: Iteration:   1 / 1000 [  0%]  (Warmup)
+Chain 1: Iteration: 100 / 1000 [ 10%]  (Warmup)
+Chain 1: Iteration: 200 / 1000 [ 20%]  (Warmup)
+Chain 1: Iteration: 251 / 1000 [ 25%]  (Sampling)
+Chain 1: Iteration: 350 / 1000 [ 35%]  (Sampling)
+Chain 1: Iteration: 450 / 1000 [ 45%]  (Sampling)
+Chain 1: Iteration: 550 / 1000 [ 55%]  (Sampling)
+Chain 1: Iteration: 650 / 1000 [ 65%]  (Sampling)
+Chain 1: Iteration: 750 / 1000 [ 75%]  (Sampling)
+Chain 1: Iteration: 850 / 1000 [ 85%]  (Sampling)
+Chain 1: Iteration: 950 / 1000 [ 95%]  (Sampling)
+Chain 1: Iteration: 1000 / 1000 [100%]  (Sampling)
+Chain 1: 
+Chain 1:  Elapsed Time: 6.7 seconds (Warm-up)
+Chain 1:                20.471 seconds (Sampling)
+Chain 1:                27.171 seconds (Total)
+Chain 1: 
+Chain 2: Iteration: 100 / 1000 [ 10%]  (Warmup)
+Chain 2: Iteration: 200 / 1000 [ 20%]  (Warmup)
+Chain 2: Iteration: 251 / 1000 [ 25%]  (Sampling)
+Chain 2: Iteration: 350 / 1000 [ 35%]  (Sampling)
+Chain 2: Iteration: 450 / 1000 [ 45%]  (Sampling)
+Chain 2: Iteration: 550 / 1000 [ 55%]  (Sampling)
+Chain 2: Iteration: 650 / 1000 [ 65%]  (Sampling)
+Chain 2: Iteration: 750 / 1000 [ 75%]  (Sampling)
+Chain 2: Iteration: 850 / 1000 [ 85%]  (Sampling)
+Chain 2: Iteration: 950 / 1000 [ 95%]  (Sampling)
+Chain 2: Iteration: 1000 / 1000 [100%]  (Sampling)
+Chain 2: 
+Chain 2:  Elapsed Time: 144.358 seconds (Warm-up)
+Chain 2:                532.891 seconds (Sampling)
+Chain 2:                677.249 seconds (Total)
+Chain 2: 
+
+SAMPLING FOR MODEL 'anon_model' NOW (CHAIN 1).
+
+SAMPLING FOR MODEL 'anon_model' NOW (CHAIN 2).
+Chain 1: 
+Chain 1: Gradient evaluation took 0.001803 seconds
+Chain 1: 1000 transitions using 10 leapfrog steps per transition would take 18.03 seconds.
+Chain 1: Adjust your expectations accordingly!
+Chain 1: 
+Chain 1: 
+Chain 2: 
+Chain 2: Gradient evaluation took 0.001781 seconds
+Chain 2: 1000 transitions using 10 leapfrog steps per transition would take 17.81 seconds.
+Chain 2: Adjust your expectations accordingly!
+Chain 2: 
+Chain 2: 
+Chain 1: Iteration:   1 / 1000 [  0%]  (Warmup)
+Chain 2: Iteration:   1 / 1000 [  0%]  (Warmup)
+Chain 2: Iteration: 100 / 1000 [ 10%]  (Warmup)
+Chain 1: Iteration: 100 / 1000 [ 10%]  (Warmup)
+Chain 2: Iteration: 200 / 1000 [ 20%]  (Warmup)
+Chain 1: Iteration: 200 / 1000 [ 20%]  (Warmup)
+Chain 2: Iteration: 251 / 1000 [ 25%]  (Sampling)
+Chain 1: Iteration: 251 / 1000 [ 25%]  (Sampling)
+Chain 2: Iteration: 350 / 1000 [ 35%]  (Sampling)
+Chain 1: Iteration: 350 / 1000 [ 35%]  (Sampling)
+Chain 2: Iteration: 450 / 1000 [ 45%]  (Sampling)
+Chain 1: Iteration: 450 / 1000 [ 45%]  (Sampling)
+Chain 2: Iteration: 550 / 1000 [ 55%]  (Sampling)
+Chain 1: Iteration: 550 / 1000 [ 55%]  (Sampling)
+Chain 2: Iteration: 650 / 1000 [ 65%]  (Sampling)
+Chain 1: Iteration: 650 / 1000 [ 65%]  (Sampling)
+Chain 2: Iteration: 750 / 1000 [ 75%]  (Sampling)
+Chain 1: Iteration: 750 / 1000 [ 75%]  (Sampling)
+Chain 2: Iteration: 850 / 1000 [ 85%]  (Sampling)
+Chain 1: Iteration: 850 / 1000 [ 85%]  (Sampling)
+Chain 2: Iteration: 950 / 1000 [ 95%]  (Sampling)
+Chain 2: Iteration: 1000 / 1000 [100%]  (Sampling)
+Chain 2: 
+Chain 2:  Elapsed Time: 1.939 seconds (Warm-up)
+Chain 2:                5.109 seconds (Sampling)
+Chain 2:                7.048 seconds (Total)
+Chain 2: 
+Chain 1: Iteration: 950 / 1000 [ 95%]  (Sampling)
+Chain 1: Iteration: 1000 / 1000 [100%]  (Sampling)
+Chain 1: 
+Chain 1:  Elapsed Time: 2.088 seconds (Warm-up)
+Chain 1:                5.619 seconds (Sampling)
+Chain 1:                7.707 seconds (Total)
+Chain 1: 
+
+SAMPLING FOR MODEL 'anon_model' NOW (CHAIN 1).
+
+SAMPLING FOR MODEL 'anon_model' NOW (CHAIN 2).
+Chain 1: 
+Chain 1: Gradient evaluation took 0.000747 seconds
+Chain 1: 1000 transitions using 10 leapfrog steps per transition would take 7.47 seconds.
+Chain 1: Adjust your expectations accordingly!
+Chain 1: 
+Chain 1: 
+Chain 2: 
+Chain 2: Gradient evaluation took 0.000736 seconds
+Chain 2: 1000 transitions using 10 leapfrog steps per transition would take 7.36 seconds.
+Chain 2: Adjust your expectations accordingly!
+Chain 2: 
+Chain 2: 
+Chain 2: Iteration:   1 / 1000 [  0%]  (Warmup)
+Chain 1: Iteration:   1 / 1000 [  0%]  (Warmup)
+Chain 2: Iteration: 100 / 1000 [ 10%]  (Warmup)
+Chain 1: Iteration: 100 / 1000 [ 10%]  (Warmup)
+Chain 2: Iteration: 200 / 1000 [ 20%]  (Warmup)
+Chain 1: Iteration: 200 / 1000 [ 20%]  (Warmup)
+Chain 2: Iteration: 251 / 1000 [ 25%]  (Sampling)
+Chain 1: Iteration: 251 / 1000 [ 25%]  (Sampling)
+Chain 2: Iteration: 350 / 1000 [ 35%]  (Sampling)
+Chain 1: Iteration: 350 / 1000 [ 35%]  (Sampling)
+Chain 2: Iteration: 450 / 1000 [ 45%]  (Sampling)
+Chain 1: Iteration: 450 / 1000 [ 45%]  (Sampling)
+Chain 2: Iteration: 550 / 1000 [ 55%]  (Sampling)
+Chain 1: Iteration: 550 / 1000 [ 55%]  (Sampling)
+Chain 2: Iteration: 650 / 1000 [ 65%]  (Sampling)
+Chain 1: Iteration: 650 / 1000 [ 65%]  (Sampling)
+Chain 2: Iteration: 750 / 1000 [ 75%]  (Sampling)
+Chain 1: Iteration: 750 / 1000 [ 75%]  (Sampling)
+Chain 2: Iteration: 850 / 1000 [ 85%]  (Sampling)
+Chain 1: Iteration: 850 / 1000 [ 85%]  (Sampling)
+Chain 2: Iteration: 950 / 1000 [ 95%]  (Sampling)
+Chain 1: Iteration: 950 / 1000 [ 95%]  (Sampling)
+Chain 2: Iteration: 1000 / 1000 [100%]  (Sampling)
+Chain 2: 
+Chain 2:  Elapsed Time: 19.446 seconds (Warm-up)
+Chain 2:                85.753 seconds (Sampling)
+Chain 2:                105.199 seconds (Total)
+Chain 2: 
+Chain 1: Iteration: 1000 / 1000 [100%]  (Sampling)
+Chain 1: 
+Chain 1:  Elapsed Time: 20.925 seconds (Warm-up)
+Chain 1:                85.831 seconds (Sampling)
+Chain 1:                106.756 seconds (Total)
+Chain 1: 
+
+SAMPLING FOR MODEL 'anon_model' NOW (CHAIN 1).
+
+SAMPLING FOR MODEL 'anon_model' NOW (CHAIN 2).
+Chain 2: 
+Chain 2: Gradient evaluation took 0.003287 seconds
+Chain 2: 1000 transitions using 10 leapfrog steps per transition would take 32.87 seconds.
+Chain 2: Adjust your expectations accordingly!
+Chain 2: 
+Chain 2: 
+Chain 1: 
+Chain 1: Gradient evaluation took 0.003508 seconds
+Chain 1: 1000 transitions using 10 leapfrog steps per transition would take 35.08 seconds.
+Chain 1: Adjust your expectations accordingly!
+Chain 1: 
+Chain 1: 
+Chain 2: Iteration:   1 / 1000 [  0%]  (Warmup)
+Chain 1: Iteration:   1 / 1000 [  0%]  (Warmup)
+Chain 2: Iteration: 100 / 1000 [ 10%]  (Warmup)
+Chain 1: Iteration: 100 / 1000 [ 10%]  (Warmup)
+Chain 2: Iteration: 200 / 1000 [ 20%]  (Warmup)
+Chain 1: Iteration: 200 / 1000 [ 20%]  (Warmup)
+Chain 2: Iteration: 251 / 1000 [ 25%]  (Sampling)
+Chain 1: Iteration: 251 / 1000 [ 25%]  (Sampling)
+Chain 2: Iteration: 350 / 1000 [ 35%]  (Sampling)
+Chain 1: Iteration: 350 / 1000 [ 35%]  (Sampling)
+Chain 2: Iteration: 450 / 1000 [ 45%]  (Sampling)
+Chain 1: Iteration: 450 / 1000 [ 45%]  (Sampling)
+Chain 2: Iteration: 550 / 1000 [ 55%]  (Sampling)
+Chain 1: Iteration: 550 / 1000 [ 55%]  (Sampling)
+Chain 2: Iteration: 650 / 1000 [ 65%]  (Sampling)
+Chain 1: Iteration: 650 / 1000 [ 65%]  (Sampling)
+Chain 2: Iteration: 750 / 1000 [ 75%]  (Sampling)
+Chain 1: Iteration: 750 / 1000 [ 75%]  (Sampling)
+Chain 2: Iteration: 850 / 1000 [ 85%]  (Sampling)
+Chain 1: Iteration: 850 / 1000 [ 85%]  (Sampling)
+Chain 2: Iteration: 950 / 1000 [ 95%]  (Sampling)
+Chain 1: Iteration: 950 / 1000 [ 95%]  (Sampling)
+Chain 2: Iteration: 1000 / 1000 [100%]  (Sampling)
+Chain 2: 
+Chain 2:  Elapsed Time: 110.698 seconds (Warm-up)
+Chain 2:                431.635 seconds (Sampling)
+Chain 2:                542.333 seconds (Total)
+Chain 2: 
+Chain 1: Iteration: 1000 / 1000 [100%]  (Sampling)
+Chain 1: 
+Chain 1:  Elapsed Time: 115.608 seconds (Warm-up)
+Chain 1:                431.203 seconds (Sampling)
+Chain 1:                546.811 seconds (Total)
+Chain 1: 
+
+SAMPLING FOR MODEL 'anon_model' NOW (CHAIN 1).
+
+SAMPLING FOR MODEL 'anon_model' NOW (CHAIN 2).
+Chain 1: 
+Chain 1: Gradient evaluation took 0.003144 seconds
+Chain 1: 1000 transitions using 10 leapfrog steps per transition would take 31.44 seconds.
+Chain 1: Adjust your expectations accordingly!
+Chain 1: 
+Chain 1: 
+Chain 2: 
+Chain 2: Gradient evaluation took 0.002891 seconds
+Chain 2: 1000 transitions using 10 leapfrog steps per transition would take 28.91 seconds.
+Chain 2: Adjust your expectations accordingly!
+Chain 2: 
+Chain 2: 
+Chain 1: Iteration:   1 / 1000 [  0%]  (Warmup)
+Chain 2: Iteration:   1 / 1000 [  0%]  (Warmup)
+Chain 2: Iteration: 100 / 1000 [ 10%]  (Warmup)
+Chain 1: Iteration: 100 / 1000 [ 10%]  (Warmup)
+Chain 2: Iteration: 200 / 1000 [ 20%]  (Warmup)
+Chain 1: Iteration: 200 / 1000 [ 20%]  (Warmup)
+Chain 2: Iteration: 251 / 1000 [ 25%]  (Sampling)
+Chain 1: Iteration: 251 / 1000 [ 25%]  (Sampling)
+Chain 2: Iteration: 350 / 1000 [ 35%]  (Sampling)
+Chain 1: Iteration: 350 / 1000 [ 35%]  (Sampling)
+Chain 2: Iteration: 450 / 1000 [ 45%]  (Sampling)
+Chain 1: Iteration: 450 / 1000 [ 45%]  (Sampling)
+Chain 2: Iteration: 550 / 1000 [ 55%]  (Sampling)
+Chain 1: Iteration: 550 / 1000 [ 55%]  (Sampling)
+Chain 2: Iteration: 650 / 1000 [ 65%]  (Sampling)
+Chain 1: Iteration: 650 / 1000 [ 65%]  (Sampling)
+Chain 2: Iteration: 750 / 1000 [ 75%]  (Sampling)
+Chain 1: Iteration: 750 / 1000 [ 75%]  (Sampling)
+Chain 2: Iteration: 850 / 1000 [ 85%]  (Sampling)
+Chain 1: Iteration: 850 / 1000 [ 85%]  (Sampling)
+Chain 2: Iteration: 950 / 1000 [ 95%]  (Sampling)
+Chain 1: Iteration: 950 / 1000 [ 95%]  (Sampling)
+Chain 2: Iteration: 1000 / 1000 [100%]  (Sampling)
+Chain 2: 
+Chain 2:  Elapsed Time: 91.165 seconds (Warm-up)
+Chain 2:                406.613 seconds (Sampling)
+Chain 2:                497.778 seconds (Total)
+Chain 2: 
+Chain 1: Iteration: 1000 / 1000 [100%]  (Sampling)
+Chain 1: 
+Chain 1:  Elapsed Time: 116.066 seconds (Warm-up)
+Chain 1:                405.063 seconds (Sampling)
+Chain 1:                521.129 seconds (Total)
+Chain 1: 
+
+SAMPLING FOR MODEL 'anon_model' NOW (CHAIN 1).
+
+SAMPLING FOR MODEL 'anon_model' NOW (CHAIN 2).
+Chain 1: 
+Chain 1: Gradient evaluation took 0.001185 seconds
+Chain 1: 1000 transitions using 10 leapfrog steps per transition would take 11.85 seconds.
+Chain 1: Adjust your expectations accordingly!
+Chain 1: 
+Chain 1: 
+Chain 2: 
+Chain 2: Gradient evaluation took 0.001283 seconds
+Chain 2: 1000 transitions using 10 leapfrog steps per transition would take 12.83 seconds.
+Chain 2: Adjust your expectations accordingly!
+Chain 2: 
+Chain 2: 
+Chain 2: Iteration:   1 / 1000 [  0%]  (Warmup)
+Chain 1: Iteration:   1 / 1000 [  0%]  (Warmup)
+Chain 1: Iteration: 100 / 1000 [ 10%]  (Warmup)
+Chain 2: Iteration: 100 / 1000 [ 10%]  (Warmup)
+Chain 1: Iteration: 200 / 1000 [ 20%]  (Warmup)
+Chain 2: Iteration: 200 / 1000 [ 20%]  (Warmup)
+Chain 1: Iteration: 251 / 1000 [ 25%]  (Sampling)
+Chain 2: Iteration: 251 / 1000 [ 25%]  (Sampling)
+Chain 1: Iteration: 350 / 1000 [ 35%]  (Sampling)
+Chain 2: Iteration: 350 / 1000 [ 35%]  (Sampling)
+Chain 1: Iteration: 450 / 1000 [ 45%]  (Sampling)
+Chain 2: Iteration: 450 / 1000 [ 45%]  (Sampling)
+Chain 1: Iteration: 550 / 1000 [ 55%]  (Sampling)
+Chain 2: Iteration: 550 / 1000 [ 55%]  (Sampling)
+Chain 1: Iteration: 650 / 1000 [ 65%]  (Sampling)
+Chain 2: Iteration: 650 / 1000 [ 65%]  (Sampling)
+Chain 1: Iteration: 750 / 1000 [ 75%]  (Sampling)
+Chain 2: Iteration: 750 / 1000 [ 75%]  (Sampling)
+Chain 1: Iteration: 850 / 1000 [ 85%]  (Sampling)
+Chain 2: Iteration: 850 / 1000 [ 85%]  (Sampling)
+Chain 1: Iteration: 950 / 1000 [ 95%]  (Sampling)
+Chain 2: Iteration: 950 / 1000 [ 95%]  (Sampling)
+Chain 1: Iteration: 1000 / 1000 [100%]  (Sampling)
+Chain 1: 
+Chain 1:  Elapsed Time: 35.434 seconds (Warm-up)
+Chain 1:                155.323 seconds (Sampling)
+Chain 1:                190.757 seconds (Total)
+Chain 1: 
+Chain 2: Iteration: 1000 / 1000 [100%]  (Sampling)
+Chain 2: 
+Chain 2:  Elapsed Time: 38.362 seconds (Warm-up)
+Chain 2:                155.12 seconds (Sampling)
+Chain 2:                193.482 seconds (Total)
+Chain 2: 
+
+SAMPLING FOR MODEL 'anon_model' NOW (CHAIN 1).
+
+SAMPLING FOR MODEL 'anon_model' NOW (CHAIN 2).
+Chain 2: 
+Chain 2: Gradient evaluation took 0.006824 seconds
+Chain 2: 1000 transitions using 10 leapfrog steps per transition would take 68.24 seconds.
+Chain 2: Adjust your expectations accordingly!
+Chain 2: 
+Chain 2: 
+Chain 1: 
+Chain 1: Gradient evaluation took 0.007189 seconds
+Chain 1: 1000 transitions using 10 leapfrog steps per transition would take 71.89 seconds.
+Chain 1: Adjust your expectations accordingly!
+Chain 1: 
+Chain 1: 
+Chain 1: Iteration:   1 / 1000 [  0%]  (Warmup)
+Chain 2: Iteration:   1 / 1000 [  0%]  (Warmup)
+Chain 2: Iteration: 100 / 1000 [ 10%]  (Warmup)
+Chain 1: Iteration: 100 / 1000 [ 10%]  (Warmup)
+Chain 2: Iteration: 200 / 1000 [ 20%]  (Warmup)
+Chain 1: Iteration: 200 / 1000 [ 20%]  (Warmup)
+Chain 2: Iteration: 251 / 1000 [ 25%]  (Sampling)
+Chain 1: Iteration: 251 / 1000 [ 25%]  (Sampling)
+Chain 2: Iteration: 350 / 1000 [ 35%]  (Sampling)
+Chain 1: Iteration: 350 / 1000 [ 35%]  (Sampling)
+Chain 2: Iteration: 450 / 1000 [ 45%]  (Sampling)
+Chain 1: Iteration: 450 / 1000 [ 45%]  (Sampling)
+Chain 2: Iteration: 550 / 1000 [ 55%]  (Sampling)
+Chain 1: Iteration: 550 / 1000 [ 55%]  (Sampling)
+Chain 2: Iteration: 650 / 1000 [ 65%]  (Sampling)
+Chain 1: Iteration: 650 / 1000 [ 65%]  (Sampling)
+Chain 2: Iteration: 750 / 1000 [ 75%]  (Sampling)
+Chain 1: Iteration: 750 / 1000 [ 75%]  (Sampling)
+Chain 2: Iteration: 850 / 1000 [ 85%]  (Sampling)
+Chain 1: Iteration: 850 / 1000 [ 85%]  (Sampling)
+Chain 2: Iteration: 950 / 1000 [ 95%]  (Sampling)
+Chain 1: Iteration: 950 / 1000 [ 95%]  (Sampling)
+Chain 2: Iteration: 1000 / 1000 [100%]  (Sampling)
+Chain 2: 
+Chain 2:  Elapsed Time: 244.362 seconds (Warm-up)
+Chain 2:                1106.48 seconds (Sampling)
+Chain 2:                1350.84 seconds (Total)
+Chain 2: 
+Chain 1: Iteration: 1000 / 1000 [100%]  (Sampling)
+Chain 1: 
+Chain 1:  Elapsed Time: 269.531 seconds (Warm-up)
+Chain 1:                1098.62 seconds (Sampling)
+Chain 1:                1368.15 seconds (Total)
+Chain 1: 
+
+SAMPLING FOR MODEL 'anon_model' NOW (CHAIN 1).
+
+SAMPLING FOR MODEL 'anon_model' NOW (CHAIN 2).
+Chain 1: 
+Chain 1: Gradient evaluation took 0.000867 seconds
+Chain 1: 1000 transitions using 10 leapfrog steps per transition would take 8.67 seconds.
+Chain 1: Adjust your expectations accordingly!
+Chain 1: 
+Chain 1: 
+Chain 2: 
+Chain 2: Gradient evaluation took 0.000829 seconds
+Chain 2: 1000 transitions using 10 leapfrog steps per transition would take 8.29 seconds.
+Chain 2: Adjust your expectations accordingly!
+Chain 2: 
+Chain 2: 
+Chain 1: Iteration:   1 / 1000 [  0%]  (Warmup)
+Chain 2: Iteration:   1 / 1000 [  0%]  (Warmup)
+Chain 2: Iteration: 100 / 1000 [ 10%]  (Warmup)
+Chain 1: Iteration: 100 / 1000 [ 10%]  (Warmup)
+Chain 2: Iteration: 200 / 1000 [ 20%]  (Warmup)
+Chain 1: Iteration: 200 / 1000 [ 20%]  (Warmup)
+Chain 2: Iteration: 251 / 1000 [ 25%]  (Sampling)
+Chain 1: Iteration: 251 / 1000 [ 25%]  (Sampling)
+Chain 2: Iteration: 350 / 1000 [ 35%]  (Sampling)
+Chain 1: Iteration: 350 / 1000 [ 35%]  (Sampling)
+Chain 2: Iteration: 450 / 1000 [ 45%]  (Sampling)
+Chain 1: Iteration: 450 / 1000 [ 45%]  (Sampling)
+Chain 2: Iteration: 550 / 1000 [ 55%]  (Sampling)
+Chain 1: Iteration: 550 / 1000 [ 55%]  (Sampling)
+Chain 2: Iteration: 650 / 1000 [ 65%]  (Sampling)
+Chain 1: Iteration: 650 / 1000 [ 65%]  (Sampling)
+Chain 2: Iteration: 750 / 1000 [ 75%]  (Sampling)
+Chain 1: Iteration: 750 / 1000 [ 75%]  (Sampling)
+Chain 2: Iteration: 850 / 1000 [ 85%]  (Sampling)
+Chain 1: Iteration: 850 / 1000 [ 85%]  (Sampling)
+Chain 2: Iteration: 950 / 1000 [ 95%]  (Sampling)
+Chain 1: Iteration: 950 / 1000 [ 95%]  (Sampling)
+Chain 2: Iteration: 1000 / 1000 [100%]  (Sampling)
+Chain 2: 
+Chain 2:  Elapsed Time: 22.55 seconds (Warm-up)
+Chain 2:                92.747 seconds (Sampling)
+Chain 2:                115.297 seconds (Total)
+Chain 2: 
+Chain 1: Iteration: 1000 / 1000 [100%]  (Sampling)
+Chain 1: 
+Chain 1:  Elapsed Time: 24.062 seconds (Warm-up)
+Chain 1:                92.577 seconds (Sampling)
+Chain 1:                116.639 seconds (Total)
+Chain 1: 
+
+SAMPLING FOR MODEL 'anon_model' NOW (CHAIN 1).
+
+SAMPLING FOR MODEL 'anon_model' NOW (CHAIN 2).
+Chain 1: 
+Chain 1: Gradient evaluation took 0.003574 seconds
+Chain 1: 1000 transitions using 10 leapfrog steps per transition would take 35.74 seconds.
+Chain 1: Adjust your expectations accordingly!
+Chain 1: 
+Chain 1: 
+Chain 2: 
+Chain 2: Gradient evaluation took 0.003883 seconds
+Chain 2: 1000 transitions using 10 leapfrog steps per transition would take 38.83 seconds.
+Chain 2: Adjust your expectations accordingly!
+Chain 2: 
+Chain 2: 
+Chain 1: Iteration:   1 / 1000 [  0%]  (Warmup)
+Chain 2: Iteration:   1 / 1000 [  0%]  (Warmup)
+Chain 2: Iteration: 100 / 1000 [ 10%]  (Warmup)
+Chain 1: Iteration: 100 / 1000 [ 10%]  (Warmup)
+Chain 2: Iteration: 200 / 1000 [ 20%]  (Warmup)
+Chain 1: Iteration: 200 / 1000 [ 20%]  (Warmup)
+Chain 2: Iteration: 251 / 1000 [ 25%]  (Sampling)
+Chain 1: Iteration: 251 / 1000 [ 25%]  (Sampling)
+Chain 2: Iteration: 350 / 1000 [ 35%]  (Sampling)
+Chain 1: Iteration: 350 / 1000 [ 35%]  (Sampling)
+Chain 2: Iteration: 450 / 1000 [ 45%]  (Sampling)
+Chain 1: Iteration: 450 / 1000 [ 45%]  (Sampling)
+Chain 2: Iteration: 550 / 1000 [ 55%]  (Sampling)
+Chain 1: Iteration: 550 / 1000 [ 55%]  (Sampling)
+Chain 2: Iteration: 650 / 1000 [ 65%]  (Sampling)
+Chain 1: Iteration: 650 / 1000 [ 65%]  (Sampling)
+Chain 2: Iteration: 750 / 1000 [ 75%]  (Sampling)
+Chain 1: Iteration: 750 / 1000 [ 75%]  (Sampling)
+Chain 2: Iteration: 850 / 1000 [ 85%]  (Sampling)
+Chain 1: Iteration: 850 / 1000 [ 85%]  (Sampling)
+Chain 2: Iteration: 950 / 1000 [ 95%]  (Sampling)
+Chain 1: Iteration: 950 / 1000 [ 95%]  (Sampling)
+Chain 2: Iteration: 1000 / 1000 [100%]  (Sampling)
+Chain 2: 
+Chain 2:  Elapsed Time: 86.473 seconds (Warm-up)
+Chain 2:                352.032 seconds (Sampling)
+Chain 2:                438.505 seconds (Total)
+Chain 2: 
+Chain 1: Iteration: 1000 / 1000 [100%]  (Sampling)
+Chain 1: 
+Chain 1:  Elapsed Time: 92.589 seconds (Warm-up)
+Chain 1:                352.001 seconds (Sampling)
+Chain 1:                444.59 seconds (Total)
+Chain 1: 
+
+SAMPLING FOR MODEL 'anon_model' NOW (CHAIN 1).
+
+SAMPLING FOR MODEL 'anon_model' NOW (CHAIN 2).
+Chain 1: 
+Chain 1: Gradient evaluation took 0.001378 seconds
+Chain 1: 1000 transitions using 10 leapfrog steps per transition would take 13.78 seconds.
+Chain 1: Adjust your expectations accordingly!
+Chain 1: 
+Chain 1: 
+Chain 2: 
+Chain 2: Gradient evaluation took 0.001545 seconds
+Chain 2: 1000 transitions using 10 leapfrog steps per transition would take 15.45 seconds.
+Chain 2: Adjust your expectations accordingly!
+Chain 2: 
+Chain 2: 
+Chain 1: Iteration:   1 / 1000 [  0%]  (Warmup)
+Chain 2: Iteration:   1 / 1000 [  0%]  (Warmup)
+Chain 1: Iteration: 100 / 1000 [ 10%]  (Warmup)
+Chain 2: Iteration: 100 / 1000 [ 10%]  (Warmup)
+Chain 1: Iteration: 200 / 1000 [ 20%]  (Warmup)
+Chain 2: Iteration: 200 / 1000 [ 20%]  (Warmup)
+Chain 1: Iteration: 251 / 1000 [ 25%]  (Sampling)
+Chain 2: Iteration: 251 / 1000 [ 25%]  (Sampling)
+Chain 1: Iteration: 350 / 1000 [ 35%]  (Sampling)
+Chain 2: Iteration: 350 / 1000 [ 35%]  (Sampling)
+Chain 1: Iteration: 450 / 1000 [ 45%]  (Sampling)
+Chain 2: Iteration: 450 / 1000 [ 45%]  (Sampling)
+Chain 1: Iteration: 550 / 1000 [ 55%]  (Sampling)
+Chain 2: Iteration: 550 / 1000 [ 55%]  (Sampling)
+Chain 1: Iteration: 650 / 1000 [ 65%]  (Sampling)
+Chain 2: Iteration: 650 / 1000 [ 65%]  (Sampling)
+Chain 1: Iteration: 750 / 1000 [ 75%]  (Sampling)
+Chain 2: Iteration: 750 / 1000 [ 75%]  (Sampling)
+Chain 1: Iteration: 850 / 1000 [ 85%]  (Sampling)
+Chain 2: Iteration: 850 / 1000 [ 85%]  (Sampling)
+Chain 1: Iteration: 950 / 1000 [ 95%]  (Sampling)
+Chain 2: Iteration: 950 / 1000 [ 95%]  (Sampling)
+Chain 1: Iteration: 1000 / 1000 [100%]  (Sampling)
+Chain 1: 
+Chain 1:  Elapsed Time: 47.662 seconds (Warm-up)
+Chain 1:                185.583 seconds (Sampling)
+Chain 1:                233.245 seconds (Total)
+Chain 1: 
+Chain 2: Iteration: 1000 / 1000 [100%]  (Sampling)
+Chain 2: 
+Chain 2:  Elapsed Time: 52.249 seconds (Warm-up)
+Chain 2:                185.151 seconds (Sampling)
+Chain 2:                237.4 seconds (Total)
+Chain 2: 
+
+SAMPLING FOR MODEL 'anon_model' NOW (CHAIN 1).
+
+SAMPLING FOR MODEL 'anon_model' NOW (CHAIN 2).
+Chain 2: 
+Chain 2: Gradient evaluation took 0.001474 seconds
+Chain 2: 1000 transitions using 10 leapfrog steps per transition would take 14.74 seconds.
+Chain 2: Adjust your expectations accordingly!
+Chain 2: 
+Chain 2: 
+Chain 1: 
+Chain 1: Gradient evaluation took 0.001631 seconds
+Chain 1: 1000 transitions using 10 leapfrog steps per transition would take 16.31 seconds.
+Chain 1: Adjust your expectations accordingly!
+Chain 1: 
+Chain 1: 
+Chain 2: Iteration:   1 / 1000 [  0%]  (Warmup)
+Chain 1: Iteration:   1 / 1000 [  0%]  (Warmup)
+Chain 1: Iteration: 100 / 1000 [ 10%]  (Warmup)
+Chain 2: Iteration: 100 / 1000 [ 10%]  (Warmup)
+Chain 1: Iteration: 200 / 1000 [ 20%]  (Warmup)
+Chain 2: Iteration: 200 / 1000 [ 20%]  (Warmup)
+Chain 1: Iteration: 251 / 1000 [ 25%]  (Sampling)
+Chain 2: Iteration: 251 / 1000 [ 25%]  (Sampling)
+Chain 1: Iteration: 350 / 1000 [ 35%]  (Sampling)
+Chain 2: Iteration: 350 / 1000 [ 35%]  (Sampling)
+Chain 1: Iteration: 450 / 1000 [ 45%]  (Sampling)
+Chain 2: Iteration: 450 / 1000 [ 45%]  (Sampling)
+Chain 1: Iteration: 550 / 1000 [ 55%]  (Sampling)
+Chain 2: Iteration: 550 / 1000 [ 55%]  (Sampling)
+Chain 1: Iteration: 650 / 1000 [ 65%]  (Sampling)
+Chain 2: Iteration: 650 / 1000 [ 65%]  (Sampling)
+Chain 1: Iteration: 750 / 1000 [ 75%]  (Sampling)
+Chain 2: Iteration: 750 / 1000 [ 75%]  (Sampling)
+Chain 1: Iteration: 850 / 1000 [ 85%]  (Sampling)
+Chain 2: Iteration: 850 / 1000 [ 85%]  (Sampling)
+Chain 1: Iteration: 950 / 1000 [ 95%]  (Sampling)
+Chain 2: Iteration: 950 / 1000 [ 95%]  (Sampling)
+Chain 1: Iteration: 1000 / 1000 [100%]  (Sampling)
+Chain 1: 
+Chain 1:  Elapsed Time: 46.091 seconds (Warm-up)
+Chain 1:                197.86 seconds (Sampling)
+Chain 1:                243.951 seconds (Total)
+Chain 1: 
+Chain 2: Iteration: 1000 / 1000 [100%]  (Sampling)
+Chain 2: 
+Chain 2:  Elapsed Time: 53.508 seconds (Warm-up)
+Chain 2:                198.049 seconds (Sampling)
+Chain 2:                251.557 seconds (Total)
+Chain 2: 
+
+SAMPLING FOR MODEL 'anon_model' NOW (CHAIN 1).
+
+SAMPLING FOR MODEL 'anon_model' NOW (CHAIN 2).
+Chain 1: 
+Chain 1: Gradient evaluation took 0.006423 seconds
+Chain 1: 1000 transitions using 10 leapfrog steps per transition would take 64.23 seconds.
+Chain 1: Adjust your expectations accordingly!
+Chain 1: 
+Chain 1: 
+Chain 2: 
+Chain 2: Gradient evaluation took 0.006273 seconds
+Chain 2: 1000 transitions using 10 leapfrog steps per transition would take 62.73 seconds.
+Chain 2: Adjust your expectations accordingly!
+Chain 2: 
+Chain 2: 
+Chain 1: Iteration:   1 / 1000 [  0%]  (Warmup)
+Chain 2: Iteration:   1 / 1000 [  0%]  (Warmup)
+Chain 1: Iteration: 100 / 1000 [ 10%]  (Warmup)
+Chain 2: Iteration: 100 / 1000 [ 10%]  (Warmup)
+Chain 1: Iteration: 200 / 1000 [ 20%]  (Warmup)
+Chain 2: Iteration: 200 / 1000 [ 20%]  (Warmup)
+Chain 1: Iteration: 251 / 1000 [ 25%]  (Sampling)
+Chain 2: Iteration: 251 / 1000 [ 25%]  (Sampling)
+Chain 1: Iteration: 350 / 1000 [ 35%]  (Sampling)
+Chain 2: Iteration: 350 / 1000 [ 35%]  (Sampling)
+Chain 1: Iteration: 450 / 1000 [ 45%]  (Sampling)
+Chain 2: Iteration: 450 / 1000 [ 45%]  (Sampling)
+Chain 1: Iteration: 550 / 1000 [ 55%]  (Sampling)
+Chain 2: Iteration: 550 / 1000 [ 55%]  (Sampling)
+Chain 1: Iteration: 650 / 1000 [ 65%]  (Sampling)
+Chain 2: Iteration: 650 / 1000 [ 65%]  (Sampling)
+Chain 1: Iteration: 750 / 1000 [ 75%]  (Sampling)
+Chain 2: Iteration: 750 / 1000 [ 75%]  (Sampling)
+Chain 1: Iteration: 850 / 1000 [ 85%]  (Sampling)
+Chain 2: Iteration: 850 / 1000 [ 85%]  (Sampling)
+Error in x@mode : 
+  no applicable method for `@` applied to an object of class "NULL"
+Calls: sampling -> sampling -> .local -> sapply -> lapply -> FUN
+In addition: There were 50 or more warnings (use warnings() to see the first 50)
+Execution halted
+Error while shutting down parallel: unable to terminate some child processes
